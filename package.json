@@ -1,0 +1,29 @@
+{
+  "name": "cloud-rekognition-controller",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcosFierros/cloud-rekognition-controller.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarcosFierros/cloud-rekognition-controller/issues"
+  },
+  "homepage": "https://github.com/MarcosFierros/cloud-rekognition-controller#readme",
+  "dependencies": {
+    "aws-sdk": "^2.1028.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
