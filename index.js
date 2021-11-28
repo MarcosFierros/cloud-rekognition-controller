@@ -41,7 +41,7 @@ app.get('/compare-faces', (req, res) => {
     "Image": {
       "S3Object": {
           "Bucket": `${S3_BUCKETNAME}`,
-          "Name": req.body.SourceImage
+          "Name": req.get("image")
       }
     }
   }
@@ -87,7 +87,7 @@ app.post('/index-faces', (req, res) => {
   client.indexFaces(input, (err, data) => {
     if (err) {
       console.log(err)
-      res.status(500).send(error);
+      res.status(500).send(err);
     }
     console.log(data);
     res.status(200).send(data);
